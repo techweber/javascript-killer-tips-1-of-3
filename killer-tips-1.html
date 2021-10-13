@@ -1,0 +1,29 @@
+<script>
+
+// TIP 1 : Copy to Clipboard
+// const copyToClipboard = (text) => navigator.clipboard.writeText(text);
+// copyToClipboard("Hello World");
+
+// TIP 2 : Check if Date is Valid
+// const isDateValid = (...val) => !Number.isNaN(new Date(...val).valueOf());
+// alert(isDateValid("December 17, 1995 03:24:00"));
+// Result: true
+
+// TIP 3 : Find the day of year
+// const dayOfYear = (date) => Math.floor((date - new Date(date.getFullYear(), 0, 0)) / 1000 / 60 / 60 / 24);
+// alert(dayOfYear(new Date()));
+// Result: 272
+
+// TIP 4 : Capitalise a String
+// const capitalize = str => str.charAt(0).toUpperCase() + str.slice(1);
+// alert(capitalize("follow for more"));
+// Result: Follow for more
+
+// TIP 5 : Find the number of days between two days
+// const dayDif = (date1, date2) => Math.ceil(Math.abs(date1.getTime() - date2.getTime()) / 86400000);
+// alert(dayDif(new Date("2021-10-21"), new Date("2021-10-13")));
+// Result: 366
+
+// TIP 6: Clear All Cookies
+// const clearCookies = document.cookie.split(';').forEach(cookie => document.cookie = cookie.replace(/^ +/, '').replace(/=.*/, `=;expires=${new Date(0).toUTCString()};path=/`));
+</script>
